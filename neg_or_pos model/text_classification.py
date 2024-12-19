@@ -30,6 +30,9 @@ def vectorize_text(text, label):
 
 dataset_dir = "./aclImdb_v1/aclImdb"
 
+remove_dir = os.path.join(dataset_dir + "/train", 'unsup')
+shutil.rmtree(remove_dir)
+
 batch_size = 32
 seed = 42
 
